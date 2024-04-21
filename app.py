@@ -32,3 +32,18 @@ plt.title("histograma")
 plt.ylabel("eje Y")
 plt.xlabel("eje X")
 plt.show()
+
+# Grafico de Dispersion
+dx1 = [0.25, 1.25, 2.25, 3.25, 4.25]
+dy1 = [10, 55, 80, 32, 40]
+dx2 = [0.75, 1.75, 2.75, 3.75, 4.75]
+dy2 = [42, 26, 50, 10, 16]
+
+plt.scatter(dx1, dy1, color="red", label="Datos 1")
+plt.scatter(dx2, dy2, color="green", label="Datos 2")
+
+plt.title("Grafico de dispersión")
+plt.ylabel("eje Y")
+plt.xlabel("eje X")
+plt.legend()
+plt.show()
