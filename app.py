@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import random
 
 x1 = [1, 2, 3, 4]
 y1 = [13, 21, 6, 34]
@@ -17,8 +18,17 @@ plt.legend()
 plt.show()
 
 # Grafico de torta
-
 plt.pie(y1, labels=x1)
 plt.axis("equal")
 plt.title("torta")
+plt.show()
+
+# Grafico de histograma
+histo_data = [[random.randint(1, 100) for _ in range(40)]]
+bins = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+plt.hist(histo_data, bins=bins, color="green", histtype="bar", rwidth=0.8)
+plt.title("histograma")
+plt.ylabel("eje Y")
+plt.xlabel("eje X")
 plt.show()
